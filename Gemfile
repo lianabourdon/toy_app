@@ -3,7 +3,7 @@ source "https://rubygems.org"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.2.2", ">= 7.2.2.1"
 
-ruby "3.3.4"
+ruby "3.2.3"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
@@ -38,7 +38,9 @@ gem "bootsnap", require: false
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
-  gem "sqlite3", ">= 1.4"
+  gem "sqlite3", "~> 1.4"
+end
+
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
 
@@ -47,7 +49,6 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
-end
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
